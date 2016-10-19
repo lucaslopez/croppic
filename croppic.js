@@ -105,7 +105,7 @@
 			
 			that.createImgUploadControls();
 			
-			if( $.isEmptyObject(that.options.loadPicture)){				
+			if( that.options.loadPicture === '' ) {				
 				that.bindImgUploadControl();
 			}else{				
 				that.loadExistingImage();
